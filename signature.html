@@ -1,0 +1,35 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://use.fontawesome.com/249c51b6a1.js"></script>
+<link rel="stylesheet" href="signature.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="signature.js"></script>
+</head>
+<div class="body">
+	<div id="dialog" title="Digital Signature">
+		To digitally sign the document, click the yellow signature icon <i class="fa fa-pencil dialog-pencil" aria-hidden="true"></i> .<br/>
+		<canvas id="myCanvasSignature" acknowledged-data="false" class="signature-pad" width="400" height="100"></canvas>
+	<input id="UserName" name="UserName" type="hidden" value="My Signature">
+	</div>
+	<div id="change-sig" title="Edit Signature">
+		Please provide your new digital signature representation.<br/><br/>
+		<canvas id="signature-pad" class="signature-pad" width="400" height="100"></canvas>
+	</div>
+	<div class="signature-card">
+		<div class="legal-clause"></div>
+		<div class="sign-area">
+			<div class="sign-block pull-right">
+				<div>Signature: <i class="fa fa-pencil" aria-hidden="true" onclick="Signature('jm38s4i1');"></i></div>
+				<canvas id="Sig-jm38s4i1" class="dig-sig " sig-id-data="jm38s4i1" signed-data="false" width="400" height="100"></canvas>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="log-file">
+	<p>Log file</p>
+</div>
